@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.switch {
+    width: 60px;
+    padding: 1px;
+    margin: 0 auto;
+  background-color: black;
+}
+
+.switch input {
+  -webkit-appearance: none;
+
+  height: 20px;
+    width: 20px;
+}
+
+.switch input:checked {
+  background: blue;
+}
+  

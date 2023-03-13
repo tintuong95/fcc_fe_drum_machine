@@ -1,13 +1,98 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: #8d8d8d;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.drum-pad{
+ background: grey;
+ width: 100px;
+ height: 80px;
+ border: none;
+ border-radius: 7px;
+ box-shadow: 2px 2px 5px rgb(59, 59, 59);
+}
+
+.drum-pad:active{
+  transform: translateY(-5%);
+  background-color: orange;
+}
+
+.container {
+  background: #b3b3b3;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 10px;
+  border: 6px solid orange;
+}
+main{
+  display: flex;
+}
+
+.grid{
+  display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap:9px;
+
+
+}
+
+.w-50{
+  width: 50%;
+}
+
+.input-radio{
+  width: 10px;
+  height: 10px;
+}
+.switch {
+    width: 60px;
+    padding: 1px;
+    margin: 0 auto;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.switch input {
+  -webkit-appearance: none;
+
+  height: 20px;
+    width: 20px;
+      border-radius: 3px;
+}
+
+.switch input:checked {
+  background: blue;
+  transition: all 0.5s;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap:14px;
+  width: 100%;
+}
+
+#display{
+  width: 200px;
+  height: 60px;
+  background-color: rgba(128, 128, 128, 0.712);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.flex-logo{
+  display: flex;
+  justify-content: end;
 }
